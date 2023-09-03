@@ -21,9 +21,16 @@ class MyApp extends StatelessWidget {
         title: 'First project',
         theme: ThemeData(
           useMaterial3: true,
-        ),
-        home: LoginScreen()
-      ),
+          inputDecorationTheme:
+            InputDecorationTheme(
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.black)
+              )
+            ),
+    textSelectionTheme: TextSelectionThemeData(
+    cursorColor: Colors.black
+        ),),
+        home: LoginScreen())
     );
   }
 }

@@ -50,8 +50,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
                 width: 300.w,
                 //color: Colors.blue,
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
                     hintText: 'adres e-mail',
                     filled: true,
                     fillColor: Color.fromRGBO(165, 168, 170, 0.8)
@@ -64,9 +67,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
                 width: 300.w,
                 //color: Colors.pink,
-                child: const TextField(
+                child: TextField(
                   obscureText: true,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5)
+                    ),
                     hintText: 'hasło',
                       filled: true,
                       fillColor: Color.fromRGBO(165, 168, 170, 0.8)

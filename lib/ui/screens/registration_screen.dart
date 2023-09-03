@@ -63,7 +63,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   child: TextField(
                     onChanged: _updateEmailNotEmpty,
                     controller: emailController,
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5)
+                      ),
                         hintText: 'adres e-mail',
                         filled: true,
                         fillColor: Color.fromRGBO(165, 168, 170, 0.8)
@@ -76,12 +79,15 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   duration: const Duration(milliseconds: 1000),
                   child: Container(
                     padding: EdgeInsets.only(bottom: 10),
-                    height: 50,
+                    height: 60,
                     width: 300.w,
                     child: TextField(
                       controller: passwordController,
                       obscureText: true,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5)
+                        ),
                           hintText: 'hasło',
                           filled: true,
                           fillColor: Color.fromRGBO(165, 168, 170, 0.8)
@@ -95,12 +101,15 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   duration: const Duration(milliseconds: 1000),
                   child: Container(
                     padding: EdgeInsets.only(bottom: 10),
-                    height: 50,
+                    height: 60,
                     width: 300.w,
                     child: TextField(
                       controller: confirmPasswordController,
                       obscureText: true,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5)
+                        ),
                           hintText: 'powtórz hasło',
                           filled: true,
                           fillColor: Color.fromRGBO(165, 168, 170, 0.8)
