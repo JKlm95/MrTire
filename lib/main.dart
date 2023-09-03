@@ -1,4 +1,6 @@
+import 'package:first_project/ui/screens/first_screen.dart';
 import 'package:first_project/ui/screens/login_screen.dart';
+import 'package:first_project/ui/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
